@@ -1,0 +1,9 @@
+<div *ngIf="product" class="product-details">
+  <h2>{{ product.name }}</h2>
+  <p>{{ product.description }}</p>
+  <p><strong>Price:</strong> {{ product.price | currency }}</p>
+  <button mat-raised-button color="primary" routerLink="/products">Back to Products</button>
+</div>
+<div *ngIf="!product">
+  <p>Loading product details...</p>
+</div>

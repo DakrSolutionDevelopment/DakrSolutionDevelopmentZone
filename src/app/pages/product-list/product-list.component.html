@@ -1,0 +1,9 @@
+<div class="product-list">
+    <h2>Products</h2>
+    <div *ngFor="let product of products" class="product">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <button mat-raised-button color="primary" [routerLink]="['/product', product.id]">View Details</button>
+    </div>
+  </div>
+  
